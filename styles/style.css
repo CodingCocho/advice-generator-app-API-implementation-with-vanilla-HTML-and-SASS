@@ -1,0 +1,106 @@
+* {
+  padding: 0px;
+  margin: 0px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.desktop-border {
+  display: none;
+}
+
+body {
+  background-color: #323a49;
+}
+
+.main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-family: "Manrope", sans-serif;
+}
+
+.main .card {
+  border-radius: 10px;
+  background-color: #4e5d73;
+  padding: 40px 20px;
+  margin-top: 150px;
+  text-align: center;
+  width: 350px;
+  position: relative;
+}
+
+.main .card .advice-number {
+  color: #52ffa8;
+  letter-spacing: 5px;
+  font-size: .5rem;
+  font-weight: 800;
+}
+
+.main .card .advice {
+  color: #cee3e9;
+  font-size: 28px;
+  font-weight: 800;
+  margin-top: 20px;
+}
+
+.main .card .mobile-border {
+  width: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+  margin-top: 20px;
+}
+
+.main .card .dice-container {
+  border-radius: 50%;
+  background-color: #52ffa8;
+  height: 50px;
+  width: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 25px auto -65px auto;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+  cursor: pointer;
+}
+
+.main .card .dice-container:hover {
+  -webkit-box-shadow: 0 0 2rem rgba(82, 255, 168, 0.75);
+          box-shadow: 0 0 2rem rgba(82, 255, 168, 0.75);
+}
+
+@media screen and (min-width: 1024px) {
+  .card {
+    width: 600px !important;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .card .desktop-border {
+    display: block;
+    margin-top: 20px;
+  }
+  .card .mobile-border {
+    display: none;
+  }
+}
+/*# sourceMappingURL=style.css.map */

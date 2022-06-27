@@ -1,0 +1,99 @@
+$backgroundColor: hsl(217, 19%, 24%);
+$cardColor: hsl(217, 19%, 38%);
+$adviceAndButtonColor: hsl(150, 100%, 66%);
+$textColor: hsl(193, 38%, 86%);
+$font: 'Manrope', sans-serif;
+$fontSize: 28px;
+$adviceWeight: 800;
+
+*
+{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+.desktop-border
+{
+    display: none;
+}
+
+body
+{
+    background-color: $backgroundColor;
+}
+
+.main
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: $font;
+    .card
+    {
+        border-radius: 10px;
+        background-color: $cardColor;
+        padding: 40px 20px;
+        margin-top: 150px;
+        text-align: center;
+        width: 350px;
+        position: relative;
+        .advice-number
+        {
+            color: $adviceAndButtonColor;
+            letter-spacing: 5px;
+            font-size: .5rem;
+            font-weight: $adviceWeight;
+        }
+        .advice
+        {
+            color: $textColor;
+            font-size: $fontSize;
+            font-weight: $adviceWeight;
+            margin-top: 20px;
+        }
+        .mobile-border
+        {
+            width: 100%;
+            object-fit: contain;
+            margin-top: 20px;
+        }
+        .dice-container
+        {
+            border-radius: 50%;
+            background-color: $adviceAndButtonColor;
+            height: 50px;
+            width: 50px;
+            display: flex;
+            margin: 25px auto -65px auto;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+            cursor: pointer;
+            &:hover
+            {
+                box-shadow: 0 0 2rem hsla(150, 100%, 66%, .75);
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 1024px)
+{
+    .card
+    {
+        width: 600px !important;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        .desktop-border
+        {
+            display: block;
+            margin-top: 20px;
+        }
+        .mobile-border
+        {
+            display: none;
+        }
+    }
+}
