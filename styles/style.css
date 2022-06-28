@@ -102,5 +102,11 @@ body {
   .card .mobile-border {
     display: none;
   }
+  .advice-number {
+    font-size: 1rem !important;
+  }
+  .advice {
+    font-size: 2.25rem !important;
+  }
 }
 /*# sourceMappingURL=style.css.map */
