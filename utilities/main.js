@@ -25,7 +25,6 @@ const fetchAdvice = async () =>
     adviceText.innerHTML = text2;
 }
 
-fetchAdvice();
 
 
 
